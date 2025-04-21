@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortened URL</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background for night mode */
+            color: #e0e0e0; /* Light text for readability */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #ffffff; /* White for emphasis */
+        }
+        a {
+            color: #4dabf7; /* Bright blue for links */
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content-container {
+            background-color: #2a2a2a; /* Slightly lighter dark for content */
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px; /* Limit content width */
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1>Shortened URL:</h1>
+        <a href="{{ short_url }}">{{ short_url }}</a>
+    </div>
+</body>
+</html>
